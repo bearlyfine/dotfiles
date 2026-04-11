@@ -1,0 +1,11 @@
+# Default deny: ignore everything in this home-directory repo.
+*
+
+# Keep the ignore rules themselves tracked.
+!.gitignore
+
+# Whitelisted top-level dotfiles.
+!.tmux.conf
+!.zshrc
+!.vimrc
+!.aerospace.toml
