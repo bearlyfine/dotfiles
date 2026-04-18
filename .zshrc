@@ -187,3 +187,4 @@ source "/Users/gorgeous/.openclaw/completions/openclaw.zsh"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+eval "$(rbenv init - zsh)"
