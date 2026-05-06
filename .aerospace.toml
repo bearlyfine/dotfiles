@@ -10,7 +10,7 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-    'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+    'exec-and-forget borders style=round hidpi=on active_color=0xffa78bfa inactive_color=0x00000000 width=3.0'
 ]
 
 # Start AeroSpace at login
@@ -23,7 +23,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 30
+accordion-padding = 160
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -102,7 +102,7 @@ automatically-unhide-macos-hidden-apps = false
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     alt-slash = 'layout tiles horizontal vertical'
-    alt-comma = 'layout accordion horizontal vertical'
+    alt-comma = 'layout accordion horizontal'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     alt-h = 'focus left'
@@ -192,6 +192,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
     alt-f = 'fullscreen'
+    alt-shift-f = 'layout floating tiling'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
@@ -230,6 +231,10 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
     if.app-id = 'com.tencent.xinWeChat'
     # run = ['layout floating', 'move-node-to-workspace S']  # The callback itself
+    run = ['layout floating']  # The callback itself
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.Passwords'
     run = ['layout floating']  # The callback itself
 
 [[on-window-detected]]
