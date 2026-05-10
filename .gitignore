@@ -9,3 +9,7 @@
 !.zshrc
 !.vimrc
 !.aerospace.toml
+
+# Config 
+!.config/nvim/init.lua
+
