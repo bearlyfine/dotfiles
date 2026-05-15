@@ -43,6 +43,8 @@ alias gs="git status"
 alias ga="git add" 
 alias ls="ls -G"
 
+alias v="nvim"
+
 alias cs=cursor
 
 # Make command
@@ -188,3 +190,6 @@ source "/Users/gorgeous/.openclaw/completions/openclaw.zsh"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 eval "$(rbenv init - zsh)"
+
+# const
+proj="/Volumes/Disk/1.Projects"
